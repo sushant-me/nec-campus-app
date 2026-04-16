@@ -1,0 +1,115 @@
+name: nec_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+# Dependencies specify other packages that your package needs in order to work.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  firebase_auth: ^6.1.0
+  cloud_firestore: ^6.0.2
+  file_picker: ^10.3.3
+  firebase_storage: ^13.0.2
+  intl: ^0.20.2
+  supabase_flutter: ^2.10.3
+  path: ^1.9.1
+  url_launcher: ^6.3.2
+  connectivity_plus: ^7.0.0
+  shared_preferences: ^2.5.3
+  csv: ^6.0.0
+  share_plus: ^12.0.0
+  path_provider: ^2.1.5
+  google_fonts: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # DEV DEPENDENCIES FOR LOGO/SPLASH SCREEN
+  flutter_launcher_icons: "^0.13.1" # For App Icon
+  flutter_native_splash: "^2.4.0" # For Launch Screen Logo
+  # END DEV DEPENDENCIES FOR LOGO/SPLASH SCREEN
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices.
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # Asset section updated to specifically include the assets folder and your logo
+  assets:
+    - assets/images/ # Keeping your existing folder
+    - assets/images/nec_logo.png # Explicitly adding your logo file.
+    # Note: If nec_logo.png is inside assets/images/, you only need the 'assets/images/' line.
+    # I'll assume you meant the logo is directly in a top-level 'assets' folder,
+    # or it's implicitly covered by 'assets/images/' (e.g., assets/images/nec_logo.png).
+    # Since your original 'assets:' only had 'assets/images/', I'll use the
+    # assumption that your logo is at `assets/images/nec_logo.png` for the configs below.
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section.
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+
+# ==============================================================================
+# CONFIGURATIONS FOR APP ICON AND LAUNCH SCREEN
+# ==============================================================================
+
+# 1. Configuration for App Icon (using flutter_launcher_icons)
+# Ensure the image_path matches the actual location of your logo, e.g., 'assets/nec_logo.png'
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/nec_logo.png"
+  # Optional: For Android Adaptive Icons (Android 8.0+), you can use:
+  # adaptive_icon_background: "#FFFFFF"
+  # adaptive_icon_foreground: "assets/nec_logo.png"
+
+# 2. Configuration for Launch Screen/Splash Screen (using flutter_native_splash)
+# This package will use 'assets/nec_logo.png' for the splash screen logo.
+flutter_native_splash:
+  # Background color of the splash screen
+  color: "#FFFFFF" # Example: White background
+  # Path to your logo image
+  image: "assets/images/nec_logo.png"
+# ==============================================================================
+# INSTRUCTIONS AFTER UPDATING THIS FILE
+# ==============================================================================
+# 1. Run 'flutter pub get'
+# 2. Run the commands to generate the assets:
+#    - For App Icon: 'flutter pub run flutter_launcher_icons'
+#    - For Launch Screen: 'flutter pub run flutter_native_splash:create'
+# 3. Completely restart/reinstall your app to see the changes.

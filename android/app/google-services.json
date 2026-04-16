@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "757279414559",
+    "project_id": "nepal-engineering-college-app",
+    "storage_bucket": "nepal-engineering-college-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757279414559:android:4e876fccc57f09416b782a",
+        "android_client_info": {
+          "package_name": "com.example.nec_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyRGGg48A8ujXqU32GuHBR_Ao4pivkvYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
