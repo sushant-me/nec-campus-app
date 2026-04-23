@@ -30,15 +30,6 @@ A full-featured mobile application built to digitize and streamline academic ope
 * **Backend:** Firebase (Firestore, Authentication, Cloud Storage)
 * **Architecture:** Offline-first caching mechanisms, secure role-based access control (RBAC), and real-time cloud database integration.
 
-## 📸 Screenshots
-
-*(Replace the links below with actual screenshots of your app)*
-<div align="center">
-  <img src="https://via.placeholder.com/250x500.png?text=Login+Screen" width="200" alt="Login Screen">
-  <img src="https://via.placeholder.com/250x500.png?text=Student+Dashboard" width="200" alt="Student Dashboard">
-  <img src="https://via.placeholder.com/250x500.png?text=Attendance+System" width="200" alt="Attendance System">
-</div>
-
 ## ⚙️ Getting Started
 
 To run this project locally, follow these steps:
